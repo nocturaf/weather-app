@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                     navController = navController,
                     startDestination = Routes.WEATHER_LIST
                 ) {
-                    // rocket list screen navigation
+                    // weather data screen navigation
                     composable(Routes.WEATHER_LIST) {
                         WeatherListScreen(onNavigate = navController::navigateScreen)
                     }

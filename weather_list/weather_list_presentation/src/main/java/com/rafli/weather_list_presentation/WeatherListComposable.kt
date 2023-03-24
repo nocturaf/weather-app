@@ -1,6 +1,5 @@
 package com.rafli.weather_list_presentation
 
-import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
@@ -52,7 +51,6 @@ fun SearchInputView(viewModel: WeatherListViewModel) {
         label = { Text(text = "Cari Nama Kota...") },
         onValueChange = {
             textFieldValue = it
-//            viewModel.getWeatherByCityName(textFieldValue.text)
         },
         modifier = searchInputModifier,
         keyboardOptions = KeyboardOptions(imeAction = ImeAction.Search),
@@ -73,10 +71,6 @@ fun WeatherItemView(
         .fillMaxWidth()
         .padding(0.dp)
         .padding(4.dp)
-        .clickable {
-            // navigate to rocket detail screen
-//            onNavigate(UiEvent.Navigate("${Route.ROCKET_DETAIL}/${rocketItem.rocketId}"))
-        }
     ) {
         Row(modifier = Modifier.padding(12.dp), verticalAlignment = Alignment.Top) {
             Column(modifier = Modifier.padding(horizontal = 12.dp)) {
