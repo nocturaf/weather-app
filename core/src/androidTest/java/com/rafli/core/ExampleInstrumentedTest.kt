@@ -1,4 +1,4 @@
-package com.rafli.weatherapp.core
+package com.rafli.core
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.rafli.weatherapp.core.test", appContext.packageName)
+        assertEquals("com.rafli.core.test", appContext.packageName)
     }
 }

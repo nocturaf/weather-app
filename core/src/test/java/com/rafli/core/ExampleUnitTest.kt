@@ -1,4 +1,4 @@
-package com.rafli.weatherapp.core
+package com.rafli.core
 
 import org.junit.Test
 
